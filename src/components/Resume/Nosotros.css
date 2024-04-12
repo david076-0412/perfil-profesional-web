@@ -1,0 +1,90 @@
+.Nosotros .heading h1 {
+  font-size: 40px;
+}
+.Nosotros .content {
+  max-width: 85%;
+  margin: auto;
+}
+.Nosotros .box {
+  padding: 40px;
+}
+.Nosotros hr {
+  margin: 30px 0 30px 0;
+  border: 1px solid #b9b8b8;
+  background-color: #d8dfdf;
+}
+.Nosotros .rate .btn_shadow {
+  color: #ffaf01;
+  padding: 15px 30px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.Nosotros p {
+  font-size: 18px;
+  transition: 0.5s;
+}
+.Nosotros .box {
+  margin-bottom: 40px;
+  position: relative;
+}
+.Nosotros .btn_shadow:hover {
+  transform: translate(0);
+}
+.Nosotros .box:hover .btn_shadow {
+  background: #dbc33b;
+  box-shadow: none;
+  color: rgb(241, 219, 219);
+}
+.Nosotros .box:hover p {
+  color: rgb(247, 154, 92);
+}
+.Nosotros .content-section {
+  position: relative;
+}
+.Nosotros .left {
+  position: relative;
+}
+.Nosotros .left::after {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 0;
+  height: 118vh;
+  width: 5px;
+  background: rgb(226, 194, 76);
+  z-index: -2;
+}
+.Nosotros .box::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: -8%;
+  height: 5px;
+  width: 50px;
+  background: #e9c74e;
+}
+.Nosotros .box::before {
+  content: "";
+  position: absolute;
+  top: 11%;
+  left: -10%;
+  height: 10px;
+  width: 10px;
+  background: #ecb143;
+  border: 5px solid #ebaa2a;
+  border-radius: 50%;
+  z-index: 5;
+  transition: 0.5s;
+}
+.Nosotros .box:hover.box:before {
+  background: #ffb03a;
+}
+@media (max-width: 768px) {
+  .Nosotros .d_flex {
+    flex-direction: column;
+  }
+  .Nosotros .left::after {
+    top: 14%;
+    height: 105vh;
+  }
+}
